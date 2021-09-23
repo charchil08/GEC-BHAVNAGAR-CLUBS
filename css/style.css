@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+body {
+  height: 200rem;
+  background-color: rgba(255, 255, 255, 0.966);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+.logo {
+  height: 2.5rem;
+}
+
+/* Property of Navbar.js started */
+
+.navbar-logo {
+  align-self: center;
+  margin-right: auto;
+  margin-left: 1rem;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+}
+
+.navbar {
+  width: 90%;
+  margin: 0 5%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.flex-container-menu {
+  height: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-item {
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #777;
+}
+
+a.navlink:hover {
+  text-decoration: none;
+  animation-duration: 0.5s;
+  transition: all 0.3s linear 0s;
+  border-bottom: 3px solid blueviolet;
+}
+
+@media (max-width: 813px) and (min-width: 557px) {
+  .navbar-logo,
+  .logo {
+    display: none;
+  }
+
+  .flex-container-menu {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 557px) {
+  .navbar-logo,
+  .logo {
+    display: none;
+  }
+
+  .flex-container-menu {
+    height: auto;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* Property of Navbar ended */
+
+/* Property of carsounel container */
+.carousel-img {
+  height: 25rem;
+  border-radius: 2rem;
+}
+/* Property of carsounel container end*/
+
+/* Property of Club container  Starts*/
+
+.club-container {
+  margin-top: 2rem;
+  
+}
+
+.heading {
+  color: #777;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+h4 {
+  padding-top: 1rem;
+  font-size: 1.8rem;
+  color: blueviolet;
+  font-weight: 900;
+}
+
+div.vision {
+  padding: 0 1rem;
+}
+
+span.highlight {
+  color: #39ff14;
+  font-weight: 900;
+}
+
+p.authority,
+p.president {
+  color: rgb(162, 83, 236);
+  font-weight: 900;
+}
+
+.i-bgcolor-site {
+  color: #0088cc;
+}
+.i-bgcolor-insta {
+  color: #dd2a7b;
+}
+.i-bgcolor-youtube {
+  color: #e62117;
+}
+.i-bgcolor-twitter {
+  color: #08a0e9;
+}
+.i-bgcolor-linkedin {
+  color: #0077b5;
+}
+
+a + div.social-media-card:hover {
+  text-decoration: none;
+}
+
+.club-box {
+  background: linear-gradient(
+    124deg,
+    rgb(253, 253, 253) 0%,
+    rgb(220, 223, 218) 100%
+  );
+  box-shadow: rgb(0 0 0 / 20%) 0px -10px 24px 0px;
+  border-radius: 0.56rem;
+  margin: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-card {
+  /* border: 2px solid black; */
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.club-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 768px) {
+  .club-wrapper {
+     grid-template-columns:1fr ;
+     grid-template-rows: auto;
+  }
+}
+
+/* Club Container Property ends */
