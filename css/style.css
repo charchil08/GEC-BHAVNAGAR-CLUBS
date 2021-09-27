@@ -15,6 +15,10 @@ body {
   height: 2.5rem;
 }
 
+i.icon:hover {
+  border-bottom:2px dotted rgb(11, 230, 29);
+}
+
 /* Property of Navbar.js started */
 
 .navbar-logo {
@@ -26,7 +30,7 @@ body {
 .header {
   position: sticky;
   top: 0;
-  background-color: transparent;
+  background-color: white;
 }
 
 .navbar {
@@ -193,6 +197,26 @@ a + div.social-media-card:hover {
 /* Club Container Property ends */
 
 /* Events Container Property Starts */
+
+a.past-event-link-report {
+  font-size : 1rem;
+  margin:1rem;
+}
+
+.past-event-link-report:hover, .upcoming-event-content-para {
+  text-decoration:none;
+  color:#234562;
+  box-shadow: rgb(0 0 0 / 20%) 0px -10px 24px 0px;
+  border-radius: 0.56rem;
+  margin: 1.5rem;
+}
+
+.upcoming-event-content-para {
+  display:inline-block;
+  margin:1rem;
+  font-size:1rem;
+}
+
 /* Events Container Property Ends */
 
 /* Footer Container Property Ends */
@@ -226,7 +250,7 @@ a.contact-link {
   padding:0 1rem;
 }
 
-a.contact-link:hover {
+a.contact-link:hover  {
   text-decoration:none;
   color:inherit;
 }
@@ -248,3 +272,4 @@ p.copyright {
   margin:2rem;
   text-align: center;
 }
+
