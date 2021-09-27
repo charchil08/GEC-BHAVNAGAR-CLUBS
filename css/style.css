@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 body {
-  height: 200rem;
   background-color: rgba(255, 255, 255, 0.966);
 }
 
@@ -31,8 +30,8 @@ body {
 }
 
 .navbar {
-  width: 90%;
-  margin: 0 5%;
+  width: 100%;
+  /* margin: 0 5%; */
   padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
   background-color: transparent;
@@ -99,7 +98,6 @@ a.navlink:hover {
 
 .club-container {
   margin-top: 2rem;
-  
 }
 
 .heading {
@@ -187,9 +185,66 @@ a + div.social-media-card:hover {
 
 @media (max-width: 768px) {
   .club-wrapper {
-     grid-template-columns:1fr ;
-     grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 }
 
 /* Club Container Property ends */
+
+/* Events Container Property Starts */
+/* Events Container Property Ends */
+
+/* Footer Container Property Ends */
+
+footer.footer-wrapper{
+  margin:2rem 0;
+}
+
+.college-contact-container {
+  background: linear-gradient(
+    124deg,
+    rgb(253, 253, 253) 0%,
+    rgb(220, 223, 218) 100%
+  );
+  box-shadow: rgb(0 0 0 / 20%) 0px -10px 24px 0px;
+  border-radius: 0.56rem;
+  margin: 1.5rem;
+
+  display:flex;
+  flex-direction: column;
+}
+
+p.contact-details {
+  width: 100%;
+  margin-right: auto;
+  margin-left: 1rem;
+  font-size: 1.25rem;
+}
+
+a.contact-link {
+  padding:0 1rem;
+}
+
+a.contact-link:hover {
+  text-decoration:none;
+  color:inherit;
+}
+
+.i-bgcolor-direction {
+  color:#7ffc0a;
+}
+
+.i-bgcolor-mail {
+  color:#d44638;
+}
+
+.i-bgcolor-prof {
+  color:rgb(162, 83, 236);
+}
+/* Footer Container Property Ends */
+
+p.copyright {
+  margin:2rem;
+  text-align: center;
+}
