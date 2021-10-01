@@ -111,19 +111,25 @@ a.navlink:hover {
   padding-bottom: 1rem;
 }
 
-h4 {
-  padding-top: 1rem;
+.title{
+  background-color: rgb(53, 53, 53);
+  border-bottom: 5px solid rgb(44, 135, 255);
+  text-align: center;
+  width: 100%;
+}
+
+.title h4 {
+  padding-top: 10px;
   font-size: 1.8rem;
-  color: blueviolet;
-  font-weight: 900;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
 }
 
 div.vision {
-  padding: 0 1rem;
+  padding: 1rem 1rem;
 }
 
 span.highlight {
-  color: #39ff14;
   font-weight: 900;
 }
 
@@ -154,19 +160,25 @@ a + div.social-media-card:hover {
 }
 
 .club-box {
-  background: linear-gradient(
+  /* background: linear-gradient(
     124deg,
     rgb(253, 253, 253) 0%,
     rgb(220, 223, 218) 100%
   );
   box-shadow: rgb(0 0 0 / 20%) 0px -10px 24px 0px;
-  border-radius: 0.56rem;
+  border-radius: 0.56rem; */
+  transition: all 0.2s linear;
+  box-shadow: 0px 0px 5px 1px rgb(189, 189, 189);
   margin: 1.5rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.club-box:hover{
+  transform: translateY(-10px);
 }
 
 .social-media-card {
@@ -198,9 +210,32 @@ a + div.social-media-card:hover {
 
 /* Events Container Property Starts */
 
+.past-events-container{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.upcoming-events-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+.past-event-content{
+  margin-left: 70px;
+}
 a.past-event-link-report {
   font-size : 1rem;
-  margin:1rem;
+  /* margin:1rem; */
+}
+
+.upcoming-event-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .past-event-link-report:hover, .upcoming-event-content-para {
@@ -208,7 +243,7 @@ a.past-event-link-report {
   color:#234562;
   box-shadow: rgb(0 0 0 / 20%) 0px -10px 24px 0px;
   border-radius: 0.56rem;
-  margin: 1.5rem;
+  /*  */
 }
 
 .upcoming-event-content-para {
@@ -226,13 +261,13 @@ footer.footer-wrapper{
 }
 
 .college-contact-container {
-  background: linear-gradient(
+  /* background: linear-gradient(
     124deg,
     rgb(253, 253, 253) 0%,
     rgb(220, 223, 218) 100%
   );
   box-shadow: rgb(0 0 0 / 20%) 0px -10px 24px 0px;
-  border-radius: 0.56rem;
+  border-radius: 0.56rem; */
   margin: 1.5rem;
 
   display:flex;
