@@ -7,9 +7,17 @@ body {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Quicksand";
   color: #333;
 }
+/* 
+.container{
+  margin: 0px ;
+  padding: 0px;
+} */
+
+
 
 .logo {
   height: 2.5rem;
@@ -27,20 +35,21 @@ i.icon:hover {
   margin-left: 1rem;
 }
 
-.header {
+/* .header {
   position: sticky;
   top: 0;
+  width: 100%;
   background-color: white;
 }
 
 .navbar {
-  width: 100%;
-  /* margin: 0 5%; */
+  width: 100vw;
+  margin: 0 0;
   padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
   background-color: transparent;
   z-index: 2;
-}
+} */
 
 .flex-container-menu {
   height: 3rem;
@@ -65,30 +74,6 @@ a.navlink:hover {
   border-bottom: 3px solid blueviolet;
 }
 
-@media (max-width: 813px) and (min-width: 557px) {
-  .navbar-logo,
-  .logo {
-    display: none;
-  }
-
-  .flex-container-menu {
-    justify-content: space-evenly;
-  }
-}
-
-@media (max-width: 557px) {
-  .navbar-logo,
-  .logo {
-    display: none;
-  }
-
-  .flex-container-menu {
-    height: auto;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-  }
-}
 /* Property of Navbar ended */
 
 /* Property of carsounel container */
@@ -100,6 +85,9 @@ a.navlink:hover {
 
 /* Property of Club container  Starts*/
 
+.carousel-container{
+  margin-top: 70px;
+}
 .club-container {
   margin-top: 2rem;
 }
@@ -169,7 +157,7 @@ a + div.social-media-card:hover {
   border-radius: 0.56rem; */
   transition: all 0.2s linear;
   box-shadow: 0px 0px 5px 1px rgb(189, 189, 189);
-  margin: 1.5rem;
+  margin: 1.5rem 10px;
 
   display: flex;
   flex-direction: column;
@@ -308,3 +296,107 @@ p.copyright {
   text-align: center;
 }
 
+@media (max-width: 813px) {
+  .navbar-logo,
+  .logo {
+    display: none;
+  }
+
+  .flex-container-menu {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 557px) {
+  .navbar-logo,
+  .logo {
+    display: none;
+  }
+
+  /* .header{
+    width: 100vw;
+  } */
+
+  .flex-container-menu {
+    height: auto;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 400) {
+  /* .header{
+    width: 90vw;
+  } */
+
+  .carousel-container{
+    width: 80vw;
+  }
+  .club-wrapper{
+    width: 100vw;
+  }
+  .club-box {
+    width: 90%;
+    margin: 10px 10px;
+  }
+  .club-container{
+    width: 10%;
+  }
+
+  .container{
+    width: 100vw;
+    margin: 10px 10px;
+    padding: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 350) {
+  /* .header{
+    width: 90vw;
+  } */
+
+  .carousel-container{
+    width: 100vw;
+  }
+  .club-wrapper{
+    width: 90vw;
+    margin: 10px 10px;
+  }
+  .club-box {
+    width: 90%;
+    margin: 0px 10px;
+    padding: 0px 10px;
+  }
+  .club-container{
+    width: 100vw;
+  }
+
+  .container{
+    width: 100vw;
+    /* margin: 0px 0px; */
+  }
+}
+
+@media screen and (max-width: 310) {
+  /* .header{
+    width: 100vw;
+  } */
+
+  /* .carousel-container{
+    width: 80vw;
+  } */
+  .club-wrapper{
+    width: 90vw;
+    /* margin: 10px 10px; */
+  }
+ 
+  .club-container{
+    width: 100vw;
+  }
+
+  .container{
+    width: 100vw;
+    padding: 0px 0px;
+  }
+}
